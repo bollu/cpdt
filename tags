@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Bsd_license	tools/bsd_license.ml	1;"	M
+COQDOC	Makefile	/^COQDOC = coqdoc -R . Cpdt$/;"	m
+MODULES	Makefile	/^MODULES       := $(MODULES_NODOC) $(MODULES_DOC)$/;"	m
+MODULES_CODE	Makefile	/^MODULES_CODE  := StackMachine InductiveTypes Predicates Coinductive Subset GeneralRec \\$/;"	m
+MODULES_DOC	Makefile	/^MODULES_DOC   := $(MODULES_PROSE) $(MODULES_CODE) Conclusion$/;"	m
+MODULES_NODOC	Makefile	/^MODULES_NODOC := CpdtTactics MoreSpecif DepList$/;"	m
+MODULES_PROSE	Makefile	/^MODULES_PROSE := Intro$/;"	m
+Make_template	tools/make_template.ml	1;"	M
+Prepare_spellcheck	tools/prepare_spellcheck.ml	1;"	M
+TEMPLATES	Makefile	/^TEMPLATES     := $(MODULES_CODE:%=templates\/%.v)$/;"	m
+TEX	Makefile	/^TEX           := $(MODULES:%=latex\/%.v.tex)$/;"	m
+VS	Makefile	/^VS            := $(MODULES:%=src\/%.v)$/;"	m
+VS_DOC	Makefile	/^VS_DOC        := $(MODULES_DOC:%=%.v)$/;"	m
+idx	tools/make_template.ml	/^	  let idx = String.index line '(' in$/;"	v
+idx	tools/make_template.ml	/^      let idx = try Some (String.index line '(') with Not_found -> None in$/;"	v
+initial	tools/make_template.ml	/^let rec initial last_was_empty =$/;"	v
+initial	tools/prepare_spellcheck.ml	/^let rec initial () =$/;"	v
+prefix	tools/prepare_spellcheck.ml	/^let prefix s1 s2 = String.length s2 >= String.length s1 && Str.string_before s2 (String.length s1) = s1$/;"	v
+print_bsd_licence	tools/bsd_license.ml	/^let print_bsd_licence () = begin$/;"	v
+read_line	tools/bsd_license.ml	/^let read_line () = $/;"	v
+read_line	tools/make_template.ml	/^let read_line () = $/;"	v
+read_line	tools/prepare_spellcheck.ml	/^let read_line () = $/;"	v
+sanitize	tools/prepare_spellcheck.ml	/^let sanitize s =$/;"	v
+strstr	tools/prepare_spellcheck.ml	/^let strstr p s = strstr' p s 0$/;"	v
+strstr'	tools/prepare_spellcheck.ml	/^let strstr' p s n =$/;"	v
+thide	tools/make_template.ml	/^and thide last_was_empty =$/;"	v
